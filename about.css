@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+/*INICIO DO MENU*/
+
+#checkboxMenu {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1000;
+    position: fixed;
+}
+
+#checkboxMenu:checked~#menuOpenCheck {
+    left: 0;
+}
+
+
+#menuBar {
+    height: 90px;
+    width: 90px;
+    background-color: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease;
+    position: fixed;
+}
+
+#menuBar svg {
+    height: 30px;
+    width: 30px;
+    fill: white;
+    
+}
+
+#checkboxMenu:checked~#menuBar,
+#checkboxMenu:checked~#menuIcons {
+    left: -90px;
+}
+
+#menuIcons {
+    margin-top: 90px;
+    width: 90px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    left: 0;
+    transition: left 0.4s ease;
+    position: fixed;
+}
+
+#menuIcons svg {
+    height: 19px;
+    width: 18px;
+    fill: #212529;
+}
+
+#menuOpenCheck {
+    position: absolute;
+    top: 0;
+    left: -273px;
+    width: 270px;
+    height: 956px;
+    transition: left 0.4s ease;
+    z-index: 12;
+    background-color: white;
+    height: 100%;
+    position: fixed;
+}
+
+#menuBackPTulen {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#menuOpenArrow {
+    width: 90px;
+    height: 90px;
+    background-color: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#menuOpenArrow svg {
+    height: 30px;
+    width: 30px;
+    fill: white;
+}
+
+#menuOpenTulen {
+    height: 90px;
+    width: 180px;
+    background-color: #2916E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#menuOpenSelect {
+    
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    line-height: 63px;
+}
+#menuOpenSelect a#menuActive {
+    color: #2916E0;
+}
+
+#menuOpenSelect a {
+    text-decoration: none;
+    color: #b2b2b2;
+    font-size: 30px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+#menuOpenSelect a:hover {
+    color: #2916E0;
+    transition: all 0.5s ease;
+}
+
+#space7{
+    height: 24.5%;
+}
+
+#space1 {
+    height: 14%;
+}
+
+#menuOpenIcons {
+    display: flex;
+    justify-content: center;
+
+}
+
+#menuOpenIcons2 {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+
+}
+
+#menuOpenIcons2 svg {
+    fill: #B2B2B2;
+    height: 18px;
+    width: 18px;
+
+}
+
+#space2 {
+    height: 18px;
+
+}
+
+#menuText {
+    color: #636363;
+    font-size: 15px;
+    text-align: center;
+    line-height: 27px;
+    font-weight: 500;
+
+}
+
+#menuText svg {
+    fill: red;
+    width: 15px;
+    height: 15px;
+}
+
+#menuText a {
+    text-decoration: none;
+    color: #B2B2B2;
+}
+
+#menuText a:hover {
+    color: #2916E0;
+}
+
+/*FIM DO MENU*/
+
+#profileArea {
+    background-color: black;
+    width: calc(100% - 93px);
+    height: 1000.66px;
+    position: absolute;
+    top: 0;
+    margin-left: 90px;
+}
+
+#profileAreaGrid {
+    display: grid;
+    grid-template-columns: 47.4% 1fr;
+    height: 100%;
+    
+}
+
+#perfilArea {
+    background-color: #2916E0;
+}
+
+#perfilAreaFlex{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#perfilImg{
+    padding-top: 10px;
+    margin: 40px 0px 120px;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 56%;
+    background-position-x: 130px;
+    background-image: url(imgs/about-bg.png);
+    background-repeat: no-repeat;
+    
+}
+
+#perfilAreaFlex img{
+    width: 516px;
+    height: 516px;
+    border-radius: 50%;
+    
+    margin-top: -35px;
+   
+}
+
+#space4{
+    height: 4.5%;
+}
+
+#perfilText{
+    margin-top: -165px;
+    font-size: 36px;
+    color: white;
+    margin-left: 145px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+#perfilText p{
+    
+    padding-bottom: 20px;
+}
+
+#glen{
+    font-weight: 700;
+    
+}
+
+#perfilDesc{
+    
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.8;
+    
+}
+
+#perfilText button{
+    
+    color: white;
+    font-size: 16px;
+    padding: 9px px;
+    width: 160px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid #6A5CE9;
+    cursor: pointer;
+}
+
+#buttonEmail {
+    display: flex;
+    align-items: center;
+    gap: 1%; 
+    margin-top: 10px;
+   
+}
+
+#colorlibMail{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 25px;
+    position: relative;
+    
+}
+
+#colorlibMail a{
+    color: white;   
+    text-decoration-color: white;      
+}
+
+#aboutArea {
+    background-color: white;
+    padding: 75px 70px;
+}
+
+#aboutMe{
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    color: #252525;
+    border-bottom: solid 3px #2916E0;
+    width: 186px;
+    font-weight: 600;
+    height: 54.19px;
+}
+
+#aboutContent p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #636363;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#skills{
+    margin-top: 50px;
+    width: 161px;
+    font-size: 36px;
+    color: #252525;
+    border-bottom: solid 3px #2916E0;
+    font-weight: 600;
+    height: 54.19px;
+
+}
+
+#skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+#skillItem {
+    flex: 1 1 150px;
+    text-align: center;
+    font-size: 16px;
+    color: #252525;
+}
+
+#circleAll {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+}
+
+#circleText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #252525;
+    font-size: 16px;
+}
+
+#circleImg {
+    display: block;
+    transform: rotate(90deg);
+}
+
+#descCircle{
+    color: #252525;
+    font-size: 20px;
+    font-weight: 600;
+}
